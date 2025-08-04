@@ -1,0 +1,147 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f8;
+    color: #222;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/* ----- header ------*/
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+    h1 {
+    font-size: 1.8rem;
+    color: #6a5acd;
+    margin-bottom: 0.5rem;
+    @media (min-width: 768px) {
+        font-size: 2.5rem;
+    }
+}
+
+    p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ------ mood selection ------- */
+#mood-selector {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+    h2 {
+        font-style: 1.2rem;
+        margin-bottom: 1rem;
+        color: #444;
+    }
+
+#mood-menu {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    align-items: center;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.mood-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #6a5acd;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color .3s ease, transform .2s ease;
+    width: 80%;
+    text-align: center;
+    @media (min-width: 768px) {
+        width: auto;
+        min-width: 150px;
+    }
+
+    &:hover {
+            background-color: #483d8b;
+            transform: scale(1.05);
+        }
+}
+
+/* ------ results ------- */
+#results {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+/* ------ playlist ------- */
+#playlist-container, #images-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    @media (min-width: 768px) {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+}
+
+.spotify-embed {
+    border-radius: 12px;
+    width: 100%;
+    height: 380px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01);
+}
+
+#playlist {
+    min-height: 150px;
+}
+
+
+/* ------ gallery ------- */
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    img {
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+}
+
+/* ------ footer ------- */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #888;
+}

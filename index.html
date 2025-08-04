@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Vibes Moodboard</title>
+    <meta name="description" content="Create a mood-based music and image board with playlists from Spotify and aesthetic photos from Unsplash. Just type your mood and vibe out.">
+    <meta name="author" content="Svitlana Bradley">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🎧 Music Vibes Moodboard</h1>
+        <p>Find your vibe. Feel the mood. Explore sound and visuals.</p>
+    </header>
+
+    <main>
+        <section id="mood-selector">
+            <h2>What's your mood?</h2>
+            <nav id="mood-menu">
+                <a href="#" data-mood="chill" aria-label="Chill" class="mood-button">Chill</a>
+                <a href="#" data-mood="study" aria-label="Study" class="mood-button">Study</a>
+                <a href="#" data-mood="happy" aria-label="Happy" class="mood-button">Happy</a>
+            </nav>
+        </section>
+
+        <section id="results">
+            <div id="playlist-container">
+                <h2>Spotify Playlist</h2>
+                <div id="playlist"></div>
+            </div>
+
+            <div id="image-container">
+                <h2>Vibe Image</h2>
+                <div id="image"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with 🎵 + 🎨 using Spotify and Unsplash APIs</p>
+    </footer>
+</body>
+</html>
