@@ -8,21 +8,22 @@
     <meta name="author" content="Svitlana Bradley">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/favicon.ico">
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/mood.js"></script>
 </head>
 <body>
-    <header>
-        <h1>🎧 Music Vibes Moodboard</h1>
-        <p>Find your vibe. Feel the mood. Explore sound and visuals.</p>
-    </header>
+    <main class="mood-page">        
+        <section class="mood-header">
+            <a href="index.html" class="back-button">‹</a>
+            <img id="mood-image" src="" alt="Mood Image">
+            <div class="mood-info">
+                <h1 id="mood-title"></h1>
+                <div class="mood-controls">
+                    <button class="heart-button">❤</button>
+                </div>
+            </div>
+        </section>
 
-    <main>        
-        <h2>What's your mood?</h2>
-        <nav id="mood-menu">
-            <a href="mood.html?mood=chill" data-mood="chill" class="mood-button">Chill</a>
-            <a href="mood.html?mood=study" data-mood="study" class="mood-button">Study</a>
-            <a href="mood.html?mood=happy" data-mood="happy" aria-label="Happy" class="mood-button">Happy</a>
-        </nav> 
+        <section id="playlist"></section>
     </main>
 
     <footer>
