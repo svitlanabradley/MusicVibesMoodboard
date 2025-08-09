@@ -84,11 +84,30 @@ main.mood-page {
     position: absolute;
     top: .5rem;
     left: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
     text-decoration: none;
     color: white;
-    margin-bottom: 1rem;
     display: inline-block;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    transition: transform .3s ease;  
+
+        &:hover {
+            transform: scale(1.2);
+        }
+}
+
+.favorites-button {
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: transform .3s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
 }
 
 .mood-info {
@@ -102,8 +121,6 @@ main.mood-page {
     color: white;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
-
-
 
 .mood-controls {
     display: flex;
@@ -122,6 +139,10 @@ main.mood-page {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     box-shadow: 0 4px 14px rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease;
+}
+
+.heart-button.active {
+    color: hotpink
 }
 
 /* CHILL mood: slow pulse */
@@ -187,6 +208,39 @@ main.mood-page {
     border: none;
 }
 
+/* --------- favorite page --------- */
+.favorite-list-item {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.favorite-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.favorite-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.remove-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
 
 /* ------ footer ------- */
 footer {
